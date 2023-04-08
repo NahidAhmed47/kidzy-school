@@ -9,11 +9,12 @@ import Main from './layouts/Main';
 import Home from './components/Home';
 import Activity from './components/Activity';
 import Departments from './components/Departments';
-import Class from './components/Class';
+import Course from './components/Course';
 import Contract from './components/Contract';
 import Registration from './components/Registration';
 import ErrorPage from './components/ErrorPage';
-import SavedClass from './components/SavedClass';
+import Enrolled_course from './components/EnrolledCourse';
+import loadCourseData from './utilities/loadCourseData'
 
 const router = createBrowserRouter([
   {
@@ -34,16 +35,17 @@ const router = createBrowserRouter([
         element:<Departments></Departments>
       },
       {
-        path:'class',
-        element:<Class></Class>
+        path:'course',
+        element:<Course></Course>,
+        loader: loadCourseData
       },
       {
         path:'contract',
         element:<Contract></Contract>
       },
       {
-        path:'saved_class',
-        element:<SavedClass></SavedClass>
+        path:'enrolled_course',
+        element:<Enrolled_course></Enrolled_course>
       },
       {
         path:'registration',

@@ -21,9 +21,9 @@ const Header = () => {
                 <NavLink to="/"  className={({isActive})=> (isActive ? 'isActive' : '')}>Home</NavLink>
                 <NavLink to="/activity"  className={({isActive})=> (isActive ? 'isActive' : '')}>Activity</NavLink>
                 <NavLink to="/departments"  className={({isActive})=> (isActive ? 'isActive' : '')}>Departments</NavLink>
-                <NavLink to="/class"  className={({isActive})=> (isActive ? 'isActive' : '')}>Class</NavLink>
+                <NavLink to="/course"  className={({isActive})=> (isActive ? 'isActive' : '')}>Course</NavLink>
                 <NavLink to="/contract"  className={({isActive})=> (isActive ? 'isActive' : '')}>Contract</NavLink>
-                <NavLink to="/saved_class"  className={({isActive})=> (isActive ? 'isActive' : '')}><ArrowDownTrayIcon className='w-5 h-5 '></ArrowDownTrayIcon></NavLink>
+                <NavLink to="/enrolled_course"  className={({isActive})=> (isActive ? 'isActive' : '')}><ArrowDownTrayIcon className='w-5 h-5 '></ArrowDownTrayIcon></NavLink>
                 <div className='flex-center flex-col lg:flex-row gap-3 lg:ml-5'>
                     <NavLink to="/my-account"  className='flex-center '>
                         <p>My account</p>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SavedClass = () => {
+const Enrolled_course = () => {
     return (
         <div>
             Saved class page
@@ -8,4 +8,4 @@ const SavedClass = () => {
     );
 };
 
-export default SavedClass;
+export default Enrolled_course;
