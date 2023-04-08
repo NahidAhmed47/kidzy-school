@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BookOpenIcon, UserCircleIcon, Bars3BottomRightIcon } from '@heroicons/react/24/solid'
+import { BookOpenIcon, UserCircleIcon, Bars3BottomRightIcon, ArrowDownTrayIcon } from '@heroicons/react/24/solid'
 import {NavLink} from 'react-router-dom';
 
 const Header = () => {
@@ -23,6 +23,7 @@ const Header = () => {
                 <NavLink to="/departments"  className={({isActive})=> (isActive ? 'isActive' : '')}>Departments</NavLink>
                 <NavLink to="/class"  className={({isActive})=> (isActive ? 'isActive' : '')}>Class</NavLink>
                 <NavLink to="/contract"  className={({isActive})=> (isActive ? 'isActive' : '')}>Contract</NavLink>
+                <NavLink to="/saved_class"  className={({isActive})=> (isActive ? 'isActive' : '')}><ArrowDownTrayIcon className='w-5 h-5 '></ArrowDownTrayIcon></NavLink>
                 <div className='flex-center flex-col lg:flex-row gap-3 lg:ml-5'>
                     <NavLink to="/my-account"  className='flex-center '>
                         <p>My account</p>

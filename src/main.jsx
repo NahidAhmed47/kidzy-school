@@ -13,6 +13,7 @@ import Class from './components/Class';
 import Contract from './components/Contract';
 import Registration from './components/Registration';
 import ErrorPage from './components/ErrorPage';
+import SavedClass from './components/SavedClass';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path:'contract',
         element:<Contract></Contract>
+      },
+      {
+        path:'saved_class',
+        element:<SavedClass></SavedClass>
       },
       {
         path:'registration',
