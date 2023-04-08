@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.primary-text-color{
+    @apply text-orange-600
+}
+.secondary-text-color{
+    @apply text-[#3a096b]
+}
+.flex-center{
+    @apply flex justify-between items-center
+}
+.btn{
+    @apply px-2 py-1 secondary-text-color text-base md:text-lg font-semibold bg-orange-400 rounded hover:bg-orange-600 duration-300 hover:text-white font-mono hover:scale-[0.95]
+}
