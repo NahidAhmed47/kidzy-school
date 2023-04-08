@@ -12,11 +12,13 @@ import Departments from './components/Departments';
 import Class from './components/Class';
 import Contract from './components/Contract';
 import Registration from './components/Registration';
+import ErrorPage from './components/ErrorPage';
 
 const router = createBrowserRouter([
   {
     path:'/',
     element: <Main></Main>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:'/',

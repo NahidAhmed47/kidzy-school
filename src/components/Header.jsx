@@ -18,17 +18,17 @@ const Header = () => {
                 <Bars3BottomRightIcon className='w-6 h-6 text-black'></Bars3BottomRightIcon>
             </span>
             <ul className={isOpenMenu ? 'absolute top-14 bg-slate-200 p-5 right-10 items-start flex flex-col gap-2 font-semibold rounded' : 'w-[60%] text-base font-semibold hidden lg:flex justify-between items-center'}>
-                <NavLink to="/" onClick={toggle} className={({isActive})=> (isActive ? 'isActive' : '')}>Home</NavLink>
-                <NavLink to="/activity" onClick={toggle} className={({isActive})=> (isActive ? 'isActive' : '')}>Activity</NavLink>
-                <NavLink to="/departments" onClick={toggle} className={({isActive})=> (isActive ? 'isActive' : '')}>Departments</NavLink>
-                <NavLink to="/class" onClick={toggle} className={({isActive})=> (isActive ? 'isActive' : '')}>Class</NavLink>
-                <NavLink to="/contract" onClick={toggle} className={({isActive})=> (isActive ? 'isActive' : '')}>Contract</NavLink>
+                <NavLink to="/"  className={({isActive})=> (isActive ? 'isActive' : '')}>Home</NavLink>
+                <NavLink to="/activity"  className={({isActive})=> (isActive ? 'isActive' : '')}>Activity</NavLink>
+                <NavLink to="/departments"  className={({isActive})=> (isActive ? 'isActive' : '')}>Departments</NavLink>
+                <NavLink to="/class"  className={({isActive})=> (isActive ? 'isActive' : '')}>Class</NavLink>
+                <NavLink to="/contract"  className={({isActive})=> (isActive ? 'isActive' : '')}>Contract</NavLink>
                 <div className='flex-center flex-col lg:flex-row gap-3 lg:ml-5'>
-                    <NavLink to="/my-account" onClick={toggle} className='flex-center '>
+                    <NavLink to="/my-account"  className='flex-center '>
                         <p>My account</p>
                         <UserCircleIcon className='w-6 h-6 primary-text-color ml-2 '></UserCircleIcon>
                     </NavLink>
-                    <NavLink to="/registration" onClick={toggle}>
+                    <NavLink to="/registration" >
                         <button className='btn'>Registration</button>
                     </NavLink>
                 </div>
