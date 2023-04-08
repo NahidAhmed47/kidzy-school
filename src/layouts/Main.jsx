@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import Header from '../components/Header';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
+
+export const AllDataContext = createContext([]);
 
 const Main = () => {
+    const {course_data} = useLoaderData();
     return (
-        <div className='max-w-[1400px] mx-auto'>
-            <Header></Header>
-            <div className='max-w-[1300px] mx-auto'>
-                <Outlet></Outlet>
-            </div>
-        </div>
+        <AllDataContext.Provider value={course_data}>
+            <div className='max-w-[1400px] mx-auto'>
+                 <Header></Header>
+                 <div className='max-w-[1300px] mx-auto'>
+                     <Outlet></Outlet>
+                 </div>
+             </div>
+        </AllDataContext.Provider>
     );
 };
 

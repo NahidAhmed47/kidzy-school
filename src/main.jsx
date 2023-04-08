@@ -22,6 +22,7 @@ const router = createBrowserRouter([
     path:'/',
     element: <Main></Main>,
     errorElement:<ErrorPage></ErrorPage>,
+    loader: loadCourseData,
     children:[
       {
         path:'/',
@@ -37,8 +38,7 @@ const router = createBrowserRouter([
       },
       {
         path:'course',
-        element:<Course></Course>,
-        loader: loadCourseData
+        element:<Course></Course>
       },
       {
         path:'contract',
