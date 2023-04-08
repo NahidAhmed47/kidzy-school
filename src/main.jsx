@@ -15,6 +15,7 @@ import Registration from './components/Registration';
 import ErrorPage from './components/ErrorPage';
 import Enrolled_course from './components/EnrolledCourse';
 import loadCourseData from './utilities/loadCourseData'
+import Bookmarked from './components/Bookmarked';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path:'enrolled_course',
         element:<Enrolled_course></Enrolled_course>
+      },
+      {
+        path:'bookmarked',
+        element:<Bookmarked></Bookmarked>
       },
       {
         path:'registration',

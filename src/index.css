@@ -17,3 +17,6 @@
 .isActive{
     @apply primary-text-color border-b-2 border-orange-500 font-bold
 }
+.badge{
+    @apply absolute -top-4 -right-1 text-center
+}
