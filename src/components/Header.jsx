@@ -10,7 +10,8 @@ const Header = () => {
         setOpenMenu(!isOpenMenu)
     }
     return (
-        <nav className='flex-center py-3 md:py-4 px-3 md:px-12 border-b'>
+        <div className='py-3 md:py-4 px-3 md:px-0 border-b w-full'>
+            <nav className='flex-center max-w-[1280px] mx-auto'>
             <div className='text-xl md:text-3xl font-bold flex items-center gap-2'>
                 <BookOpenIcon className='w-6 h-6 md:w-8 md:h-8 secondary-text-color'></BookOpenIcon>
                 <h1 className='primary-text-color'>Kid<span className='secondary-text-color'>zy</span> School</h1>
@@ -37,6 +38,7 @@ const Header = () => {
                 </div>
             </ul>
         </nav>
+        </div>
     );
 };
 

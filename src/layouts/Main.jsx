@@ -10,7 +10,7 @@ const Main = () => {
         <AllDataContext.Provider value={course_data}>
             <div className='max-w-[1400px] mx-auto'>
                  <Header></Header>
-                 <div className='max-w-[1300px] mx-auto'>
+                 <div className='max-w-[1280px] mx-auto'>
                      <Outlet></Outlet>
                  </div>
              </div>
